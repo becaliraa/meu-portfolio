@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta property="og:image" content="https://github.com/becaliraa.png">
+    <meta property="og:description" content="» Portifólio de Beca Lira, programadora front-end">
+    <meta property="og:type" content="website">
+    <meta name="author" content="Lucam">
+    <!-- <meta property="og:url" content=" LINK DO SITE "> --> 
+    <link rel="stylesheet" href="./src/styles/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+    <link rel="stylesheet" href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@3.2.0/fonts/remixicon.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Permanent+Marker&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link rel="shortcut icon" href="./images/favicon.ico" type="image/x-icon">
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <title>Beca Lira</title>
+</head>
+<body>
+    
+    <header id="home">
+        <a href="#" class="logo">Beca</a>
+
+        <ul class="navlist">
+            <li>
+                <a href="#home">Início</a>
+                <a href="#about">Sobre</a>
+                <a href="#projects">Projetos</a>
+            </li>
+        </ul>
+
+        <div class="bx bx-menu" id="menu-icon"></div>
+    </header>
+    
+    <main>
+        <section class="home">
+            <div class="text">
+                <div class="text-main">
+                    <h2>Desenvolvedora Front-end</h2>
+                    <h1>Beca Lira</h1>
+                    <p>Transformando boas experiências através de códigos<span>.</span></p>
+                    <a href="/">Download CV</a>
+                </div>
+            </div>
+            <div class="img">
+                <div class="img-main">
+                    
+                </div>
+            </div>
+        </section>
+
+
+        <section class="about" id="about">
+            <div class="photo">
+                <img src="./src/assets/beca-profile.png" alt="beca profile photo">
+            </div>
+            <div class="text">
+                <div class="text-main">
+                    <h2>Sobre</h2>
+                    <p>
+                        Olá, sou a Lira e sou estudante de Ànalise e Desenvolvimento de Sistemas. Apaixonada por café, arte, resoluções e desafios.
+                    </p>
+                    <div class="btn-social">
+                        <a href="#"><button><i class="bi bi-tiktok"></i></button></a>
+                        <a href="#"><button><i class="bi bi-instagram"></i></button></a>
+                        <a href="https://github.com/becaliraa"><button><i class="bi bi-github"></i></button></a>
+                        <a href="https://www.linkedin.com/in/becalira/"><button><i class="bi bi-linkedin"></i></button></a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+        <section class="projects" id="projects">
+            <div class="h2">
+                <h2>Projetos</h2>
+            </div>
+            <div class="card-projetos">
+                <div class="card">
+                    <i class="bi bi-person-circle"></i>
+                    <h5>Cadrasto de Login</h5>
+                    <p>Página de Login responsivo e objetivo.</p>
+                    <a href="https://becaliraa.github.io/cadastro/">Ver Projeto</a>
+                </div>
+            
+                <div class="card">
+                    <i class="bi bi-person-vcard-fill"></i>
+                    <h5>Card de Perfil</h5>
+                    <p>Card de Perfil colorido, dinâmico e responsivo.</p>
+                    <a href="https://becaliraa.github.io/becalira/">Ver Projeto</a>
+                </div>
+            
+                <div class="card">
+                    <i class="bi bi-question-square-fill"></i>
+                    <h5>Quiz: O que você prefere?</h5>
+                    <p>Quiz simples e divertido.</p>
+                    <a>Ver Projeto</a>
+                </div>
+               </div>
+        </section>
+    </main>
+    <footer>
+        <p>
+            &copy; Site feito com ❤ Todos direitos reservados.
+        </p>
+    </footer>
+
+    <script>
+        let menu = document.querySelector('#menu-icon')
+        let navList = document.querySelector('.navlist')
+
+        menu.onclick = () => {
+            menu.classList.toggle('bx-x')
+            navList.classList.toggle('open')
+        }
+
+        const sr = ScrollReveal ({
+            distance: '65px',
+            duration: 2600,
+            delay: 450,
+            reset: true
+        })
+
+
+    </script>
+</body>
+</html>
